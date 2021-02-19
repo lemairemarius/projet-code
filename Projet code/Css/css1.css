@@ -11,6 +11,12 @@ body {
     font-style: italic;
     border-bottom: solid thin black;
    }
+
+   h3 {
+       font-size: medium;
+       color: salmon;
+       font-style: oblique;
+   }
    
    p {
     font-size: 12pt;
@@ -18,5 +24,14 @@ body {
     font-family: Arial;
     letter-spacing: 0.2mm;
     word-spacing: 0.8mm;
-    color: blue;
+    color: red;
+   }
+
+   div {
+       background-color: slateblue;
+       text-align: center;
+       border-color: tomato;
+       border: 2px solid;
+       border-radius: 80%;
+       box-shadow: 20px 10px 10px red;
    }
