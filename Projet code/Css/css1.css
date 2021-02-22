@@ -35,3 +35,16 @@ body {
        border-radius: 80%;
        box-shadow: 20px 10px 10px red;
    }
+   .parent {
+    border: 5px black solid;
+    display: inline-block;
+   }
+   .box {
+    display: inline-block;
+    background: rgb(113,113,133);
+    width: 100px;
+    height: 100px;
+   }
+   #two {
+     background: #74CC42;
+   }
