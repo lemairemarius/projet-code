@@ -1,3 +1,21 @@
+/*Web responsive*/
+
+@media screen and (max-width: 768px) 
+{ 
+    h1 
+    { 
+        font-size : 40px; 
+    }
+    .colonne{
+        display: none;  
+    } 
+}     
+
+img 
+{
+     max-width: 100%;
+     height: auto;
+}
 
 /*Css pour page index jarditou*/
 .parent{
