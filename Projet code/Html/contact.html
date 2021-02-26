@@ -10,42 +10,40 @@
     <!--référencement naturel de ma page, elle doit etre clair et précise-->
     <meta name="Contact" content="Contact jarditou">
     <title>Contact</title>
-    <link rel="stylesheet" href="Assets.css/JarditouCSS.css">
 
 </head>
 
 <body>
-    <img src="Jarditou_html_zip/images/jarditou_logo.jpg" alt="logo" height="112" width="344" title="logo_jarditou">
-
-    <br>
-
-    <p style="color:darkgreen">La qualit&eacute; depuis 70 ans </p>
-
-    <br>
     <header>
-        <!--Balise sémantiques organise et controle son code(header et nav)-->
-        <nav>
-            <div class="parent">
-                <a href="index.html" title="Accueil">Accueil</a>
-                <a href="tableau.html" title="tableau">Tableau</a>
-                <a href="contact.html" title="contact">Contact</a>
-            </div>
-        </nav>
+        <!--Balise sémantiques organise et controle son code(header)-->
+        <img src="jarditou_html_zip/images/jarditou_logo.jpg" alt="logo" height="112" title="logo_jarditou">
 
         <br>
 
-        <img src="Jarditou_html_zip/images/promotion.jpg" alt="promo" width="1000" title="promo_jarditou">
+        <p style="color:darkgreen">La qualit&eacute; depuis 70 ans </p>
 
-        <div class="colonnecon"> [COLONNE DROITE]</div>
-        <!--appel de la classe (colonnecon) dans feuille Css-->
+        <br>
+        <!--balise nav-->
+        <nav>
+            <ul>
+                <li> <a href="index.html" title="Accueil">Accueil</a></li>
+                <li> <a href="tableau.html" title="tableau">Tableau</a></li>
+                <li><a href="contact.html" title="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <br>
+
+        <img src="jarditou_html_zip/images/promotion.jpg" alt="promo" width="1244" title="promotion_jarditou">
+
+        <br>
+
     </header>
 
+    <h1>Contact</h1>
+
+    <hr>
     <section>
         <!--Balise sémantiques organise et controle son code(section)-->
-        <h1>Contact</h1>
-
-        <hr>
-        <!--debut du formulaire-->
         <form action="http://bienvu.net/script.php" method="GET" id="formulaire_contact">
             <p>* Ces zones sont obligatoires</p><br>
             <fieldset>
@@ -89,19 +87,18 @@
         </form>
     </section>
 
-    <br>
+    <hr>
+
     <footer>
         <!--Balise sémantiques organise et controle son code(footer et nav)-->
         <nav>
-            <div class="parent">
-                <a href="?" title="légales">Mention l&eacute;gales</a>
-                <a href="?" title="Horraires">Horraires</a>
-                <a href="?" title="Plan du site">Plan du site</a>
-            </div>
+            <ul>
+                <li><a href="?" title="légales">Mention l&eacute;gales</a></li>
+                <li><a href="?" title="Horraires">Horraires</a></li>
+                <li><a href="?" title="Plan du site">Plan du site</a></li>
+            </ul>
         </nav>
     </footer>
-    <br>
-
 </body>
 
 </html>

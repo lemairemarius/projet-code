@@ -9,13 +9,12 @@
     <!--référencement naturel de ma page, elle doit etre clair et précise-->
     <meta name="Tableau" content="Tableau jarditou">
     <title>tableau</title>
-    <link rel="stylesheet" href="Assets.css/JarditouCSS.css">
 </head>
 
 <body>
     <header>
-        <!--Balise sémantiques organise et controle son code(header et nav)-->
-        <img src="Jarditou_html_zip/images/jarditou_logo.jpg" alt="logo" height="112" width="344" title="logo_jarditou">
+        <!--Balise sémantiques organise et controle son code(header)-->
+        <img src="jarditou_html_zip/images/jarditou_logo.jpg" alt="logo" height="112" title="logo_jarditou">
 
         <br>
 
@@ -24,32 +23,29 @@
         <br>
         <!--balise nav-->
         <nav>
-            <div class="parent">
-
-                <a href="index.html" title="Accueil">Accueil</a>
-                <a href="tableau.html" title="tableau">Tableau</a>
-                <a href="contact.html" title="contact">Contact</a>
-
-            </div>
+            <ul>
+                <li> <a href="index.html" title="Accueil">Accueil</a></li>
+                <li> <a href="tableau.html" title="tableau">Tableau</a></li>
+                <li><a href="contact.html" title="contact">Contact</a></li>
+            </ul>
         </nav>
         <br>
 
-        <img src="Jarditou_html_zip/images/promotion.jpg" width="1000" alt="promo" title="promo_jarditou">
+        <img src="jarditou_html_zip/images/promotion.jpg" alt="promo" width="1244" title="promo_jarditou">
 
         <br>
+
     </header>
-    <!--colonne de droite-->
-    <div class="colonnetab"> [COLONNE DROITE]</div>
-    <!--appel de la classe colonnetab dans feuille Css-->
+
+    <h1>Tableau</h1>
+
+    <hr>
     <section>
-        <!--Balise sémantiques organise et controle son code(section)-->
-        <h1>Tableau</h1>
-
-        <hr>
-
-        <!--début du tableau-->
-
+        <!--Balise sémantiques organise et controle son code(section-->
         <Table>
+
+            <!--début tableau-->
+
             <thead>
                 <tr>
                     <th>Photo</th>
@@ -63,7 +59,7 @@
 
             <tbody>
                 <tr>
-                    <td><img src="Jarditou_html_zip/jarditou_photos/7.jpg" alt="photo barbecue" height="112" width="112" title="barbecue1"></td>
+                    <td><img src="jarditou_html_zip/jarditou_photos/7.jpg" alt="photo barbecue" height="112" width="112" title="barbecue1"></td>
                     <td>7</td>
                     <td>Barbecues</td>
                     <td> Aramis</td>
@@ -74,7 +70,7 @@
 
             <tbody>
                 <tr>
-                    <td><img src="Jarditou_html_zip/jarditou_photos/8.jpg" alt="photo barbecue" height="112" width="112" title="barbecue2"></td>
+                    <td><img src="jarditou_html_zip/jarditou_photos/8.jpg" alt="photo barbecue" height="112" width="112" title="barbecue2"></td>
                     <td>8</td>
                     <td>Barbecues</td>
                     <td> Athos</td>
@@ -85,7 +81,7 @@
 
             <tbody>
                 <tr>
-                    <td><img src="Jarditou_html_zip/jarditou_photos/11.jpg" alt="photo barbecue" height="112" width="112" title="barbecue3"></td>
+                    <td><img src="jarditou_html_zip/jarditou_photos/11.jpg" alt="photo barbecue" height="112" width="112" title="barbecue3"></td>
                     <td>11</td>
                     <td>Barbecues</td>
                     <td> Clatronic</td>
@@ -96,7 +92,7 @@
 
             <tbody>
                 <tr>
-                    <td><img src="Jarditou_html_zip/jarditou_photos/12.jpg" alt="photo barbecue" height="112" width="112" title="barbecue4"></td>
+                    <td><img src="jarditou_html_zip/jarditou_photos/12.jpg" alt="photo barbecue" height="112" width="112" title="barbecue4"></td>
                     <td>12</td>
                     <td>Barbecues</td>
                     <td> Camping</td>
@@ -107,7 +103,7 @@
 
             <tbody>
                 <tr>
-                    <td><img src="Jarditou_html_zip/jarditou_photos/13.jpg" alt="photo_brouette" height="112" width="112" title="brouette"></td>
+                    <td><img src="jarditou_html_zip/jarditou_photos/13.jpg" alt="brouette" height="112" width="112" title="brouette"></td>
                     <td>7</td>
                     <td>brouette</td>
                     <td> Green</td>
@@ -117,22 +113,17 @@
             </tbody>
         </Table>
     </section>
-
-    <br>
-    <br>
-
+    <hr>
     <footer>
         <!--Balise sémantiques organise et controle son code(footer et nav)-->
         <nav>
-            <div class="parent">
-                <a href="?" title="légales">Mention l&eacute;gales</a>
-                <a href="?" title="Horraires">Horraires</a>
-                <a href="?" title="Plan du site">Plan du site</a>
-            </div>
-            <br>
+            <ul>
+                <li><a href="?" title="légales">Mention l&eacute;gales</a></li>
+                <li><a href="?" title="Horraires">Horraires</a></li>
+                <li><a href="?" title="Plan du site">Plan du site</a></li>
+            </ul>
         </nav>
     </footer>
-
 </body>
 
 </html>

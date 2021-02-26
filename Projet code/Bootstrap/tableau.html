@@ -19,60 +19,67 @@
 <body>
     <!--seul container de la page (fluid)-->
     <div class="container-fluid">
-        <div class="d-none d-md-block">
-            <div class="row justify-content-between">
-                <div class="col-sm-0 col-md-4">
-                    <img src="images/jarditou_logo.jpg" alt="logo" class="img-fluid" title="logo">
-                </div>
+        <header>
+            <!--Balise sémantiques organise et controle son code(header)-->
 
-                <div class="col-sm-0 col-md-4">
-                    <h1 class="align-text-bottom" style="color:darkgreen">Tout le jardin</h1>
+            <div class="d-none d-md-block">
+                <div class="row justify-content-between">
+                    <div class="col-sm-0 col-md-4">
+                        <img src="images/jarditou_logo.jpg" alt="logo" class="img-fluid" title="logo">
+                    </div>
+
+                    <div class="col-sm-0 col-md-4">
+                        <h1 class="align-text-bottom" style="color:darkgreen">Tout le jardin</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--Barre navigation et recherche-->
+            <!--Barre navigation et recherche-->
 
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:lightskyblue">
-            <a class="navbar-brand" href="index.html">Jarditou.com</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color:lightskyblue">
+                <a class="navbar-brand" href="index.html">Jarditou.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tableau.html">Tableau</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">rechercher</button>
-                </form>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tableau.html">Tableau</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">rechercher</button>
+                    </form>
+                </div>
+            </nav>
 
-        <img src="images/promotion.jpg" alt="promo" width="100%" height="auto">
-
+            <img src="images/promotion.jpg" alt="promo" width="100%" height="auto">
+        </header>
         <!--Debut du tableau-->
+        <section1>
+            <!--Balise sémantiques organise et controle son code(section1)-->
+            <Table class="table table-bordered">
+                <thead>
+                    <tr class="table-info">
+                        <th scope="col">Photo</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Cat&eacute;gories</th>
+                        <th scope="col">Libell&eacute;</th>
+                        <th scope="col">Prix</th>
+                        <th scope="col">Couleur</th>
+                    </tr>
+                </thead>
+        </section1>
 
-        <Table class="table table-bordered">
-            <thead>
-                <tr class="table-info">
-                    <th scope="col">Photo</th>
-                    <th scope="col">ID</th>
-                    <th scope="col">Cat&eacute;gories</th>
-                    <th scope="col">Libell&eacute;</th>
-                    <th scope="col">Prix</th>
-                    <th scope="col">Couleur</th>
-                </tr>
-            </thead>
-
+        <section2>
+            <!--Balise sémantiques organise et controle son code(section2)-->
             <tbody>
                 <tr class="table-warning">
                     <!--couleur de classe-->
@@ -128,31 +135,34 @@
                     <td>Verte</td>
                 </tr>
             </tbody>
-        </Table>
+            </Table>
+
+        </section2>
 
         <br>
 
-        <!--Barre de navigation bottom-->
-
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkslategray ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <footer>
+            <!--Balise sémantiques organise et controle son code(footer)-->
+            <!--Barre de navigation bottom-->
+            <nav class="navbar navbar-expand-lg navbar-light " style="background-color:darkslategray ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" style="color: white;">Mention l&eacute;gale<span class=" sr-only ">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# " style="color: white;">Horraires</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: white;">Plan du site</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" style="color: white;">Mention l&eacute;gale<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Horraires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Plan du site</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
         <br>
         <br>
     </div>
