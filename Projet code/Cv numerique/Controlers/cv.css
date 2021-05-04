@@ -1,0 +1,22 @@
+.codeLeft {
+float: left;
+top: 400px;
+width: 250px;
+margin: 0 auto;
+padding: 0px;
+}
+.codeRight {
+    float: right;
+    top: 400px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 0px;
+
+}
+.logo{
+    position: relative;
+    left: 800px;
+    top: 200px;
+}
+
+
