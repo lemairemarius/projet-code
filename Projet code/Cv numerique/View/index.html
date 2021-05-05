@@ -1,154 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Frameworks Css Primer -->
+    <!--Frameworks Css Primer -->
 
-    <link href = " https:npkg.com/@primer/css@^16.0.0/dist/primer.css " rel = " stylesheet " />
+    <link href=" https:npkg.com/@primer/css@^16.0.0/dist/primer.css " rel=" stylesheet " />
     <link rel="stylesheet" href="/Controlers/cv.css">
 
     <title>Cv num&eacute;rique</title>
 </head>
 
 <!--Background and image center with text, link for homepage -->
-<body style="background-color: black ;">
-    <div class="parent">
-        <div class="logo">
-        <div class="text-center">
-            <h1 style="color: whitesmoke;" >Marius L'Hub</h1>
-            <a href="home.hmtl">
-                <img  src="/ImgGit/pngegg.png" style="background-color:black; width: 200px;height: 200px;" alt="logo_github"/>
+
+<body style="background-color: #090C10;">
+    <div class="parent" style="max-height: 100vh; display : flex; justify-content: space-between; align-items : center;">
+
+
+        <!--Code on right and left for beautiful !-->
+        <!--code left use css page's cv.css-->
+        <div class="codeLeft" style="width: 16vw;">
+            <p style="color: #34c924;">
+                div class="col-md-12"> label for="validationDefault03" class="form-label">Libell&eacute :/label> input type="text" class="form-control" id="validationDefault03" name="libel" value="
+                <?php echo $row->pro_libelle?>"> span style="color:red">
+                <?php if(isset($pro_libel_error)) echo $pro_libel_error;?>/span> /div> div class="col-md-12"> label for="exampleFormControlTextarea1" class="form-label">Description :/label> textarea class="form-control" id="description" name="description" rows="3">?php echo $row->pro_description?>/textarea>
+                /div> div class="col-md-12"> label for="validationDefault05" class="form-label">Prix :/label> input type="number" step="0.01" class="form-control" id="validationDefault05" name="prix" value="?php echo floatval($row->pro_prix)?>"> span
+                style="color:red">?php if(isset($prix_error)) echo $prix_error;?>/span> /div> div class="col-md-12"> label for="validationDefault06" class="form-label">Stock :/label> input type="text" class="form-control" id="validationDefault06" name="stock"
+                value="?php echo $row->pro_stock?>"> span style="color:red">?php if(isset($stock_error)) echo $stock_error;?>/span> /div> }elseif(!is_numeric($stock)){ $stock_error = 'Your stock do a number.'; $count_error; } }elseif(preg_match($regexNum,$stock)){
+                $stock_error = 'Your stock do a number.'; $count_error; erif>0 heck color if (preg_match($regexAlpha,$couleur)){ $couleur_error = 'enter a color please.'; $count_error++; }elseif(strlen($couleur)>10){ $couleur_error = 'Your color is so
+                long, please no more 10 characters.'; $count_error++; } if($count_error>0){ include('../View/ajout.php'); }else include('../Controlers/script_ajout.php');value="?php echo $row->pro_stock?>"> span style="color:red">?php if(isset($stock_error))
+                echo $stock_error;?>/span> /div> }elseif(!is_numeric($stock)){ $stock_error = 'Your stock do a number.'; $count_error; } }elseif(preg_match($regexNum,$stock)){ $stock_error = 'Your stock do a number.'; $count_error; erif>0 heck color if
+                (preg_match($regexAlpha,$couleur)){ $couleur_error = 'enter a color please.'; $count_error++; }elseif(strlen($couleur)>10){ $couleur_error = 'Your color is so long, please no more 10 characters.'; $count_error++; } if($count_error>0){
+                include('../View/ajout.php'); }else include('../Controlers/script_ajout.php');(preg_match($regexAlpha,$couleur)){ $couleur_error = 'enter a color please.'; $count_error++; }elseif(strlen($couleur)>10){ $couleur_error = 'Your color is so
+                long, please no more 10 characters.'; $count_error++; } if($count_error>0){ include('../View/ajout.php'); }else include('../Controlers/script_ajout.php');
+            </p>
+        </div>
+
+
+
+
+
+        <div class="logo" style=" margin: auto 0;">
+            <h1 style="color: whitesmoke;">Marius L'Hub</h1>
+            <a href="home.html">
+                <img src="/ImgGit/pngegg.png" style="background-color:black; width: 200px;height: 200px;" alt="logo_github" />
             </a>
+            <p style="color: #34c924;text-align: center;">Click on Octocat</p>
         </div>
+
+
+
+
+
+        <!--code right use css page's cv.css-->
+        <div class="codeRight" style="width: 16vw;text-align: right">
+            <p style="color:#34c924;">
+                div class="col-md-12"> label for="validationDefault03" class="form-label">Libell&eacute :/label> input type="text" class="form-control" id="validationDefault03" name="libel" value="
+                <?php echo $row->pro_libelle?>"> span style="color:red">
+                <?php if(isset($pro_libel_error)) echo $pro_libel_error;?>/span> /div> div class="col-md-12"> label for="exampleFormControlTextarea1" class="form-label">Description :/label> textarea class="form-control" id="description" name="description" rows="3">?php echo $row->pro_description?>/textarea>
+                /div> div class="col-md-12"> label for="validationDefault05" class="form-label">Prix :/label> input type="number" step="0.01" class="form-control" id="validationDefault05" name="prix" value="?php echo floatval($row->pro_prix)?>"> span
+                style="color:red">?php if(isset($prix_error)) echo $prix_error;?>/span> /div> div class="col-md-12"> label for="validationDefault06" class="form-label">Stock :/label> input type="text" class="form-control" id="validationDefault06" name="stock"
+                value="?php echo $row->pro_stock?>"> span style="color:red">?php if(isset($stock_error)) echo $stock_error;?>/span> /div> }elseif(!is_numeric($stock)){ $stock_error = 'Your stock do a number.'; $count_error; } }elseif(preg_match($regexNum,$stock)){
+                $stock_error = 'Your stock do a number.'; $count_error; erif>0 heck color if (preg_match($regexAlpha,$couleur)){ $couleur_error = 'enter a color please.'; $count_error++; }elseif(strlen($couleur)>10){ $couleur_error = 'Your color is so
+                long, please no more 10 characters.'; $count_error++; } if($count_error>0){ include('../View/ajout.php'); }else include('../Controlers/script_ajout.php');value="?php echo $row->pro_stock?>"> span style="color:red">?php if(isset($stock_error))
+                echo $stock_error;?>/span> /div> }elseif(!is_numeric($stock)){ $stock_error = 'Your stock do a number.'; $count_error; } }elseif(preg_match($regexNum,$stock)){ $stock_error = 'Your stock do a number.'; $count_error; erif>0 heck color if
+                (preg_match($regexAlpha,$couleur)){ $couleur_error = 'enter a color please.'; $count_error++; }elseif(strlen($couleur)>10){ $couleur_error = 'Your color is so long, please no more 10 characters.'; $count_error++; } if($count_error>0){
+                include('../View/ajout.php'); }else include('../Controlers/script_ajout.php');(preg_match($regexAlpha,$couleur)){ $couleur_error = 'enter a color please.'; $count_error++; }elseif(strlen($couleur)>10){ $couleur_error = 'Your color is so
+                long, please no more 10 characters.'; $count_error++; } if($count_error>0){ include('../View/ajout.php'); }else include('../Controlers/script_ajout.php');
+            </p>
         </div>
+    </div>
 
-<!--Code on right and left for beautiful !-->
-<!--code right use css page's cv.css-->
-<div class="codeLeft">
-    <p style="color: whitesmoke;">
-        div class="col-md-12">
-            label for="validationDefault03" class="form-label">Libell&eacute :/label>
-            input type="text"
-            class="form-control" id="validationDefault03" name="libel"
-                value="<?php echo $row->pro_libelle?>">
-            span style="color:red"><?php if(isset($pro_libel_error)) echo $pro_libel_error;?>/span>
-    /div>
-
-        div class="col-md-12">
-            label for="exampleFormControlTextarea1" class="form-label">Description :/label>
-            textarea class="form-control" id="description" name="description"
-                rows="3">?php echo $row->pro_description?>/textarea>
-        /div>
-
-        div class="col-md-12">
-            label for="validationDefault05" class="form-label">Prix :/label>
-            input type="number" step="0.01" class="form-control" id="validationDefault05" name="prix"
-                value="?php echo floatval($row->pro_prix)?>">
-            span style="color:red">?php if(isset($prix_error)) echo $prix_error;?>/span>
-        /div>
-
-        div class="col-md-12">
-            label for="validationDefault06" class="form-label">Stock :/label>
-            input type="text" class="form-control" id="validationDefault06" name="stock"
-                value="?php echo $row->pro_stock?>">
-            span style="color:red">?php if(isset($stock_error)) echo $stock_error;?>/span>
-        /div>
-    }elseif(!is_numeric($stock)){
-        $stock_error = 'Your stock do a number.';
-        $count_error;
-        }
-    }elseif(preg_match($regexNum,$stock)){
-        $stock_error = 'Your stock do a number.';
-        $count_error;
-    erif>0
-    
-    heck color
-    if (preg_match($regexAlpha,$couleur)){
-        $couleur_error = 'enter a color please.';
-        $count_error++;
-    }elseif(strlen($couleur)>10){
-        $couleur_error = 'Your color is so long, please no more 10 characters.';
-        $count_error++;
-    }
-    
-    if($count_error>0){
-        include('../View/ajout.php');
-    }else include('../Controlers/script_ajout.php');
-    </p>
-</div>
-
-<!--code left use css page's cv.css-->
-<div class="codeRight">
-    <p style="color:whitesmoke;">
-        if(empty($ref)){
-            $ref_error = 'Please insert your reference.';
-            $count_error++;
-        }elseif(strlen($ref)<3){
-            $ref_error = 'Your reference needs to have minimum of 3 letters.';
-            $count_error++;
-        }elseif(preg_match($regexAlpha,$ref)<1 ){
-            $ref_error = 'Your reference needs to have letters and not numbers or others.';
-            $count_error++;
-        }
-        heck the libelle
-        if(empty($libel)){
-            $libel_error = 'Please insert your libelle.';
-            $count_error++;
-        }elseif(strlen($libel)<3){
-            $libel_error = 'Your libelle needs to have minimum of 3 letters.';
-            $count_error++;
-        }elseif(preg_match($regexAlpha,$libel)<1){
-            $libel_error = 'Your libelle needs to have letters and not numbers or others.';
-            $count_error++;
-        }
-        heck texte area
-        var_dump($_POST['textarea']);
-        if(strlen($textArea)<15){
-            $textArea_error = 'Can you write on the text area, please, more 15 letters';
-            $count_error++;
-        }
-        heck price
-        if(empty($prix)){
-            $prix_error = 'Please enter a price';
-            $count_error++;
-        }elseif(!is_numeric($prix)){
-            $prix_error = 'Your price do a number';
-            $count_error++;
-        }
-        elseif(preg_match($regexNum,$prix)){
-            $prix_error = 'Your price do a number';
-            $count_error++;
-        }
-        heck the stock
-        if(empty($stock)){
-            $stock_error = 'Please enter an number.';
-            $count_error++;
-        }elseif(!is_numeric($stock)){
-            $stock_error = 'Your stock do a number.';
-            $count_error;
-            }
-        }elseif(preg_match($regexNum,$stock)){
-            $stock_error = 'Your stock do a number.';
-            $count_error;
-        erif>
-        heck color
-        if (preg_match($regexAlpha,$couleur)){
-            $couleur_error = 'enter a color please.';
-            $count_error++;
-        }elseif(strlen($couleur)>10){
-            $couleur_error = 'Your color is so long, please no more 10 characters.';
-            $count_error++;
-        }
-        if($count_error>0){
-            include('../View/ajout.php');
-        }else include('../Controlers/script_ajout.php');
-    </p>
-</div>
-</div>
 
 
 
